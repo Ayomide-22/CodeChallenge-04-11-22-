@@ -15,7 +15,7 @@ namespace _1
             int count=0;
             if(start>end)
             {
-                Console.WriteLine("Starting number can't be less than ending number");
+                Console.WriteLine("Starting number can't be greater than ending number");
                 return;
             }
             for (var k = start; k <=end-gap; k++)
