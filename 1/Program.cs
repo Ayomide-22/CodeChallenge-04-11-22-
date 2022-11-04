@@ -13,6 +13,11 @@ namespace _1
             Console.WriteLine("Enter gap to check");
             double gap =double.Parse(Console.ReadLine());
             int count=0;
+            if(start>end)
+            {
+                Console.WriteLine("Starting number can't be less than ending number");
+                return;
+            }
             for (var k = start; k <=end-gap; k++)
             {
                 if(CheckPrime(k))
